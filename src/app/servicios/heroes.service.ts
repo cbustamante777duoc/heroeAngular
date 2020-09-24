@@ -1,3 +1,4 @@
+
 import { Injectable } from '@angular/core';
 
 @Injectable()
@@ -62,6 +63,26 @@ export class HeroesService {
 
     getHeroes(){
       return  this.heroes;
+    }
+    
+    //funcion que recibe solo un heroe del arreglo de heroes
+    getHeroe(idx:string){
+      return this.heroes[idx];
+    }
+
+    buscarHeroes(termino:string){
+      let arregloNuevo:Heroe[]  = [];
+      termino = termino.toLowerCase();
+
+      for (let heroe of this.heroes){
+        let nombre = heroe.nombre.toLowerCase();
+        if( nombre.indexOf(termino) >=0 ){
+            arregloNuevo.push(heroe)
+        }
+      }
+
+      return arregloNuevo;
+
     }
     
 }

@@ -15,6 +15,11 @@ import { HomeComponent } from './componets/home/home.component';
 import { AboutComponent } from './componets/about/about.component';
 import { HeroesComponent } from './componets/heroes/heroes.component';
 import { HeroeComponent } from './componets/heroe/heroe.component';
+import { BuscadorComponent } from './componets/buscador/buscador.component';
+
+//prueba
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -23,11 +28,13 @@ import { HeroeComponent } from './componets/heroe/heroe.component';
     HomeComponent,
     AboutComponent,
     HeroesComponent,
-    HeroeComponent
+    HeroeComponent,
+    BuscadorComponent
   ],
   imports: [
-    BrowserModule,
-    APP_ROUTING
+    BrowserModule,   
+    APP_ROUTING,   
+    FormsModule 
   ],
   providers: [
     HeroesService

@@ -3,6 +3,10 @@
     margin-top: 20px;
 }
 
+.img-logo{
+  width: 150px;
+}
+
 /*estilos importados de la curso mismo*/
 .animated {
     -webkit-animation-duration: 1s;

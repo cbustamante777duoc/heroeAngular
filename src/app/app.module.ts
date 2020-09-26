@@ -19,6 +19,7 @@ import { BuscadorComponent } from './componets/buscador/buscador.component';
 
 //prueba
 import { FormsModule } from '@angular/forms';
+import { HeroeTarjetasComponent } from './componets/heroe-tarjetas/heroe-tarjetas.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { FormsModule } from '@angular/forms';
     AboutComponent,
     HeroesComponent,
     HeroeComponent,
-    BuscadorComponent
+    BuscadorComponent,
+    HeroeTarjetasComponent
   ],
   imports: [
     BrowserModule,   
